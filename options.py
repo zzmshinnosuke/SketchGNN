@@ -28,7 +28,7 @@ class BaseOptions:
         # data params
         self.parser.add_argument('--class-name', type=str, required=True, 
                                  help='the name of the class to train or test')
-        self.parser.add_argument('--points-num', type=int, default=256, 
+        self.parser.add_argument('--points-num', type=int, default=2048,   # 256改成2048
                                  help='the number of the points in one sketch')
         self.parser.add_argument('--dataset', type=str, required=True, 
                                  help='the name of dataset')
@@ -41,7 +41,7 @@ class BaseOptions:
                                  help='the number of the feature input to net')
         self.parser.add_argument('--out-segment', type=int, required=True, 
                                  help='the number of the labels of the segment')
-        self.parser.add_argument('--batch-size', type=int, default=16, 
+        self.parser.add_argument('--batch-size', type=int, default=32,    # 16改为32
                                  help='intout batch size')
         self.parser.add_argument('--alpha', type=float, default=0.2, 
                                  help='the alpha of leakyrelu')

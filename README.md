@@ -1,3 +1,7 @@
+#Train
+conda activate sketchgnn1
+python train.py --dataset SFSD --class-name all --out-segment 41 --shuffle --stochastic
+
 # SketchGNN: Semantic Sketch Segmentation with Graph Neural Networks
 
 We introduce *SketchGNN*, a convolutional graph neural network for semantic segmentation and labeling of freehand vector sketches. We treat an input stroke-based sketch as a graph, with nodes representing the sampled points along input strokes and edges encoding the stroke structure information. *SketchGNN* significantly improves the accuracy of the state-of-the-art methods for semantic sketch segmentation and has magnitudes fewer parameters than both image-based and sequence-based methods.

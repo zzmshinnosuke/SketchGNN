@@ -38,7 +38,8 @@ def run_eval(opt=None, model=None, loader=None, dataset='test', write_result=Fal
 
     if write_result:
         testData = get_eval_result(testData, predictList)
-        result_path = os.path.join('data', opt.dataset, 'train', '{}_{}.ndjson'.format(opt.class_name, 'res'))
+#         result_path = os.path.join('data', opt.dataset, 'train', '{}_{}.ndjson'.format(opt.class_name, 'res'))
+        result_path = os.path.join('data', opt.dataset, 'train', '{}_{}.ndjson'.format(opt.class_name, 'test'))
         with open(result_path, 'w') as f:
             ndjson.dump(testData, f)
     

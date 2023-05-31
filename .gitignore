@@ -105,3 +105,8 @@ ENV/
 
 *.npy
 *.sh
+
+
+# my
+data/SFSD/
+checkpoints/SFSD/

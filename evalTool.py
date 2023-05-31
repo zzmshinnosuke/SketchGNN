@@ -20,7 +20,7 @@ def eval_unalign_batch1(model, loader):
 
     return predictList, lossList
 
-def eval_align_batchN(model, loader, P=256):
+def eval_align_batchN(model, loader, P=4096): #256改成4096
     """
     return:
     predictList: (N, P) e.g. (N, 256)
